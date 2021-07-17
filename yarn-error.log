@@ -1,0 +1,64 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.17.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/samzhang/Desktop/MERN/mern-simplesetup/package.json: Unexpected string in JSON at position 515
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "mern-simplesetup",
+    "version": "1.0.0",
+    "description": "a simple skeleton project to test my MERN work environment",
+    "main": "index.js",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/SamZhang411/Mern-simplesetup.git"
+    },
+    "author": "Qingyuan Zhang",
+    "license": "MIT",
+  
+    "dependencies": {
+      "@hot-loader/react-dom": "16.13.0",
+      "express": "4.17.1",
+      "mongodb": "3.5.5",
+      "react": "16.13.1",
+      "react-dom": "16.13.1",
+      "react-hot-loader": "4.12.20"
+    }
+  
+    "devDependencies": {
+      "@babel/core": "7.9.0",
+      "@babel/preset-env": "7.9.0",
+      "@babel/preset-react": "7.9.4",
+      "babel-loader": "8.1.0",
+      "nodemon": "2.0.2",
+      "webpack": "4.42.1",
+      "webpack-cli": "3.3.11",
+      "webpack-dev-middleware": "3.7.2",
+      "webpack-hot-middleware": "2.25.0",
+      "webpack-node-externals": "1.7.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
